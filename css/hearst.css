@@ -295,3 +295,88 @@ iframe {
   margin: 0 auto;
   padding-top: 50px;
 }
+
+/* Modal */
+.modalContainer{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	padding: 20px;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+  overflow-y:auto; /*scroll inside the modal*/
+
+}
+
+.modalContent{
+	background-color: white;
+	position: relative;
+	margin: 0 auto;
+    padding: 15px 15px 20px 15px;
+    border-radius: 15px;
+	box-sizing: border-box;
+	min-width: 250px;
+  height: 1200px;
+
+}
+
+.modalContent h3{
+	display: inline;
+	padding-right: 30px;
+	margin: 0;
+	font-size: 30px;
+}
+
+.modalContent h4{
+	margin: 9px 0 0 0;
+}
+
+.modalContent .jamModal-value{
+	font-family: Georgia, serif;
+	font-weight: normal;
+}
+
+.jamModal-imgContainer{
+	float: right;
+	margin-right: 13px;
+	margin-top: -15px;
+	height: 1500px;
+	width: 100px;
+}
+
+.modalContent p{
+	margin: 0;
+}
+
+.modalContent .modal-close{
+	position: absolute;
+	right: 15px;
+	top: 9px;
+	color: #b9b5b5;
+	padding: 0;
+	cursor: pointer;
+	font-size: 25px;
+	font-family: sans-serif;
+	font-weight: normal;
+	background-color: white;
+    border: none;
+}
+
+@media (max-width: 320px) {
+	.jamModal-imgContainer{
+		float: none;
+		margin: -10px 0 15px 0;
+	}
+
+	.modalContent h3{
+		display: block;
+		padding: 20px;;
+		margin: 0 18px 0 0;
+	}
+}
