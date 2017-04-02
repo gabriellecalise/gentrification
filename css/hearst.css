@@ -125,8 +125,47 @@ width: 100%;
 color: #fff;
 text-shadow: 2px 2px #000;
 /*padding-top: 10%;*/
+}
+
+.jamTop{
+      height: 100vh;
+      width: 100%;
+      background-image: url("../images/jamheader.jpg");
+      background-size: cover; /*this fits the background image to the div*/
+      padding-top: 40%;
+      padding-left: 40px;
+      padding-right: 40px;
+       margin-bottom: 0px;
+       color: #fff;
+}
+
+.maudesTop{
+      height: 100vh;
+      width: 100%;
+      background-image: url("../images/MaudesPlants.jpg");
+      padding-top: 40%;
+      padding-left: 40px;
+      padding-right: 40px;
+       margin-bottom: 0px;
+       color: #fff;
+}
+
+.maudesTop h1 {
+text-shadow: 2px 2px #000;
+}
 
 
+.doughTop {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../images/doughhug.jpg");
+  background-size: cover; /*this fits the background image to the div*/
+
+  padding-top: 40%;
+  padding-left: 40px;
+  padding-right: 40px;
+   margin-bottom: 0px;
+   color: #fff;
 }
 
 
@@ -322,7 +361,7 @@ iframe {
     border-radius: 15px;
 	box-sizing: border-box;
 	min-width: 250px;
-  height: 1200px;
+  height: 1500px;
 
 }
 
@@ -380,3 +419,26 @@ iframe {
 		margin: 0 18px 0 0;
 	}
 }
+
+
+
+/*Maude's modal styles*/
+
+
+.modalContent .maudesModal-value {
+  font-family: Georgia, serif;
+  font-weight: normal;
+}
+
+.maudesModal-imgContainer {
+  float: right;
+  margin-right: 13px;
+  margin-top: -15px;
+  height: 100px;
+  width: 100px;
+}
+@media (max-width: 320px) {
+  .maudesModal-imgContainer {
+    float: none;
+    margin: -10px 0 15px 0;
+  }
