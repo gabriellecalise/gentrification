@@ -29,3 +29,14 @@ doughModal.querySelector('.modal-close').addEventListener('click', function() {
 document.getElementById('clickDough').addEventListener('click', function() {
   doughModal.style.display = 'block';
 })
+
+
+var flashModal;
+flashModal = document.getElementById('flashModal');
+flashModal.querySelector('.modal-close').addEventListener('click', function() {
+  flashModal.style.display = 'none';
+});
+
+document.getElementById('clickFlash').addEventListener('click', function() {
+  flashModal.style.display = 'block';
+})
