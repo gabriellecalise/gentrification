@@ -288,7 +288,7 @@ background-repeat: no-repeat;
 #mapid {
   margin: auto;
   height: 500px;
-  width: 100%;
+  width: 800px;
   padding: 10px;
   border:2px solid #000;
 }
