@@ -1,3 +1,11 @@
+$(document).ready(function () {
+
+    $(".player").mb_YTPlayer();
+
+});
+
+
+
 var jamModal;
 jamModal = document.getElementById('jamModal');
 jamModal.querySelector('.modal-close').addEventListener('click',function(){
