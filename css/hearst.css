@@ -15,8 +15,11 @@ body {
 p {
   font-size: 125%;
   padding: 5px;
+  font-family: 'Open Sans', 'Helvetica', sans-serif;
 
 }
+
+
 
 h1 {
   font-size: 700%;
@@ -271,6 +274,8 @@ text-shadow: 2px 2px #000;
 
 ul {
 list-style-type: none;
+font-family: 'Open Sans', 'Helvetica', sans-serif;
+
 }
 
 #mcgurn {
@@ -386,8 +391,22 @@ background-repeat: no-repeat;
   margin: auto;
 }
 
+
+.footer {
+  text-align: center;
+  padding: 0;
+  width: 100%;
+  color: #000;
+
+  height:50px;
+  margin: 0;
+
+}
+
+
 #aboutus {
-  text-decoration: underline;}
+  text-decoration: underline;
+}
 
 .businesses {
   padding:20px;
@@ -409,16 +428,7 @@ bottom: 15px;
 }
 
 
-.footer {
-  text-align: center;
-  padding: 0;
-  width: 100%;
-  color: #000;
-  background-color: #fff;
-  height:50px;
-  margin: 0;
 
-}
 
 /*make the images centered in the grid of businesses */
 .center-block {
