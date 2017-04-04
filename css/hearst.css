@@ -84,10 +84,9 @@ padding-right: 25px;*/
 .gent {
   height: 100vh;
       width: 100%;
-
       padding-top: 15%;
       color: #000;
-      background: 000;
+      background: #fff;
 
     /*  text-shadow: 2px 2px #000;*/
 
@@ -222,6 +221,13 @@ background-repeat: no-repeat;
 
 
 
+.modaltitle {
+  color: #fff;
+  text-shadow: 2px 2px #223;
+  padding: 20px;
+
+}
+
 
 
 #construction{
@@ -283,6 +289,7 @@ font-family: 'Open Sans', 'Helvetica', sans-serif;
 #mcgurn {
   padding: 20px;
   margin: auto;
+  margin: 0;
 }
 
 #mcgurnframe {
@@ -378,6 +385,8 @@ background-repeat: no-repeat;
   padding: 50px;
 }
 
+
+
 #mapid {
   margin: auto;
   height: 500px;
@@ -394,13 +403,13 @@ background-repeat: no-repeat;
 }
 
 
-.footer {
+.footer1 {
   text-align: center;
   padding: 0;
   width: 100%;
   color: #000;
-
-  height:50px;
+/*background: #611;
+  height:50px;*/
   margin: 0;
 
 }
@@ -408,7 +417,12 @@ background-repeat: no-repeat;
 
 #aboutus {
   text-decoration: underline;
+  cursor: pointer;
+
 }
+
+
+
 
 .businesses {
   padding:20px;
@@ -422,12 +436,13 @@ background-repeat: no-repeat;
       margin: 0 auto;
  }
 
+/*
 #arrow {
 text-align: center;
 color: #fff;
 position: absolute;
 bottom: 15px;
-}
+} */
 
 
 
