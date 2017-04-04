@@ -71,7 +71,9 @@ padding-left: 20px;
 padding-right: 25px;*/
  margin-bottom: 0px;
   background-color: #000;
-/*  background-image: url("../images/university3.jpg");*/
+ background-image: url("../images/construction.jpg");
+ box-shadow: inset 0 0 0 100px rgba(36, 70, 105, 0.74);
+
   background-size:100%;
   background-position: center;
   background-repeat: no-repeat;

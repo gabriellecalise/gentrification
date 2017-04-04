@@ -6,14 +6,14 @@ jamModal = document.getElementById('jamModal');
 jamModal.querySelector('.modal-close').addEventListener('click',function(){
     jamModal.style.display = 'none';
     // show map div
-    $('#mapid').show(); 
+    $('#mapwrap').show();
 
 });
 
 document.getElementById('click').addEventListener('click',function(){
 		jamModal.style.display = 'block';
     // hide map div
-    $('#mapid').hide();
+    $('#mapwrap').hide();
 });
 
 
@@ -44,10 +44,15 @@ var flashModal;
 flashModal = document.getElementById('flashModal');
 flashModal.querySelector('.modal-close').addEventListener('click', function() {
   flashModal.style.display = 'none';
+  // show map div
+  $('#mapwrap').show();
 });
+
 
 document.getElementById('clickFlash').addEventListener('click', function() {
   flashModal.style.display = 'block';
+  // hide map div
+  $('#mapwrap').hide();
 })
 
 
