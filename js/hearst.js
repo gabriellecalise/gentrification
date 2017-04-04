@@ -1,13 +1,3 @@
-//$(document).ready(function () {
-
-//    $(".player").mb_YTPlayer();
-
-//});
-
-
-$().ready(function() {
-  $('#wrapper').tubular({videoId: '0Bmhjf0rKe8'}); // where idOfYourVideo is the YouTube ID.
-});
 
 
 
@@ -19,6 +9,8 @@ jamModal.querySelector('.modal-close').addEventListener('click',function(){
 
 document.getElementById('click').addEventListener('click',function(){
 		jamModal.style.display = 'block';
+
+
 })
 
 

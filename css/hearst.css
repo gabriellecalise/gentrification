@@ -451,10 +451,25 @@ bottom: 15px;
 
 .textpanel {
 
-  padding: 50px 200px 50px 200px;
+  padding-top: 40px;
 }
 
+.video-container {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px; height: 0; overflow: hidden;
 
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 90%;
+}
 
 
 /*the modal special effects on hover*/
@@ -636,11 +651,7 @@ iframe {
     border: none;
 }
 
-@media (max-width: 320px) {
-	.jamModal-imgContainer{
-		float: none;
-		margin: -10px 0 15px 0;
-	}
+
 
 	.modalContent h3{
 		display: block;
@@ -665,18 +676,6 @@ iframe {
   width: 100px;
 }
 
-@media (max-width: 320px) {
-  .flashModal-imgContainer {
-    float: none;
-    margin: -10px 0 15px 0;
-  }
-  .flashContent h3 {
-    display: block;
-    padding-right: 0;
-    margin: 0 18px 0 0;
-    font-size: 30px;
-  }
-}
 
 
 /*Maude's modal styles*/
@@ -694,11 +693,7 @@ iframe {
   height: 100px;
   width: 100px;
 }
-@media (max-width: 320px) {
-  .maudesModal-imgContainer {
-    float: none;
-    margin: -10px 0 15px 0;
-  }
+
 
 
 
@@ -730,7 +725,23 @@ iframe {
   border: none;
 }
 
-@media (max-width: 320px) {
+
+
+
+
+@media (max-width: 600px) {
+
+.top> h1 {
+    font-size: 450%;}
+
+
+.top> h2 {
+  font-size: 150%;}
+
+.video-container {
+  height: 100%;
+}
+
   .addictionModal-imgContainer {
     float: none;
     margin: -10px 0 15px 0;
@@ -741,10 +752,41 @@ iframe {
     margin: 0 18px 0 0;
     font-size: 30px;
   }
+
+    .maudesModal-imgContainer {
+      float: none;
+      margin: -10px 0 15px 0;
+    }
+
+
+      .flashModal-imgContainer {
+        float: none;
+        margin: -10px 0 15px 0;
+      }
+      .flashContent h3 {
+        display: block;
+        padding-right: 0;
+        margin: 0 18px 0 0;
+        font-size: 30px;
+
+    }
+
+    	.jamModal-imgContainer{
+    		float: none;
+    		margin: -10px 0 15px 0;
+    	}
+
+      #mapid  {
+          max-width: 90%;
+          margin: 0;
+          height: 400px;
+          }
+
+
 }
 
 /*tablet/ipad media query */
-@media (max-width: 960px) {
+@media (max-device-width: 1024px) {
   #mapid  {
       max-width: 100%;
       margin: 0;
