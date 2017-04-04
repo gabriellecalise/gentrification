@@ -76,3 +76,10 @@ addictionModal.querySelector('.modal-close').addEventListener('click', function(
 document.getElementById('clickaddiction').addEventListener('click', function() {
   addictionModal.style.display = 'block';
 })
+
+
+
+$('#teambio').hide();
+   $('#aboutus').click(function() {
+   $('#teambio').slideToggle();
+   });

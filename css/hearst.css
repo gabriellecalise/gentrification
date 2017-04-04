@@ -14,6 +14,7 @@ body {
 
 p {
   font-size: 125%;
+  padding: 5px;
 }
 
 h1 {
@@ -103,7 +104,7 @@ text-align:center;
 color:#fff;
 }
 .video-section h1{
-font-size:110px;
+font-size:200px;
 font-family: 'Buenard', serif;
 font-weight:bold;
 text-transform: uppercase;
@@ -125,11 +126,16 @@ margin: 0px auto 15px;
 
 
 
+#teambio {
+  text-align: left;
+  list-style: none;
+}
 
 
 
 
-#addictiontop {
+
+#addictionTop {
   height: 100vh;
       width: 100%;
       color: #fff;
@@ -139,13 +145,26 @@ padding-left: 20px;
  margin-bottom: 0px;
   background-color: #000;
 
-  background-image: url("../images/AddictionTattoo2.jpg");
+  background-image: url("../images/AddictionTattoo1.jpg");
   background-size:100%;
   background-position: center;
   background-repeat: no-repeat;
 
 }
 
+#jamModal-partyContainer {
+  padding: 30px;
+  height: 2000px;/*height change*/
+}
+
+#burrModal-imgContainer{
+  padding: 30px;
+}
+
+.burrBody {
+  padding: 30px;
+
+}
 
 .burrTop {
   height: 100vh;
@@ -235,6 +254,15 @@ text-shadow: 2px 2px #000;
        color: #fff;
 }
 
+
+ul {
+list-style-type: none;
+}
+
+#mcgurn {
+  padding: 20px;
+}
+
 .maudesTop{
       height: 100vh;
       width: 100%;
@@ -248,6 +276,10 @@ text-shadow: 2px 2px #000;
 
 .maudesTop h1 {
 text-shadow: 2px 2px #000;
+}
+
+.maudesBody{
+  padding: 30px;
 }
 
 
@@ -285,7 +317,7 @@ text-shadow: 2px 2px #000;
       color: #fff;
 
 padding-top: 20%;
-padding-left: 40px;
+padding-left: 45px;
 padding-right: 40px;
  margin-bottom: 0px;
   background-color: #000;
@@ -331,9 +363,16 @@ background-repeat: no-repeat;
 
 #mapwrap {
   width: 100%;
-  background: #99b;
+ background: #cde;
   padding: 20px;
   margin: auto;
+}
+
+
+.businesses {
+  padding:20px;
+  background: #cde;
+
 }
 
 .panel
@@ -350,10 +389,16 @@ bottom: 15px;
 }
 
 
-.businesses {
-  padding:20px;
-}
+.footer {
+  text-align: center;
+  padding: 0;
+  width: 100%;
+  color: #000;
+  background: #fff;
+  height:50px;
+  margin: 0;
 
+}
 
 /*make the images centered in the grid of businesses */
 .center-block {
@@ -506,8 +551,18 @@ iframe {
     border-radius: 15px;
 	box-sizing: border-box;
 	min-width: 250px;
-  height: 1500px;
+  height: 5500px;
+/* this class is the one that controls the modal. if you want more height or whatever, this is where you go to fix it.*/
+}
 
+
+
+.flashBody{
+  padding: 30px;
+}
+
+.doughBody {
+  padding: 30px;
 }
 
 .modalContent h3{
@@ -530,7 +585,6 @@ iframe {
 	float: right;
 	margin-right: 13px;
 	margin-top: -15px;
-	height: 1500px;
 	width: 100px;
 }
 
