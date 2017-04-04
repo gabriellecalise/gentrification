@@ -15,27 +15,41 @@ body {
 p {
   font-size: 125%;
   padding: 5px;
+
 }
 
 h1 {
   font-size: 700%;
-/*  text-align: center;*/
-  font-family: Garamond, Times, serif;
+  font-family: Helvetica, 'Open Sans',sans-serif;
+
+  /*font-family: 'Helvetica bold',Arial,sans-serif;*/
+
+/*  text-align: center;
+  font-family: Garamond, Times, serif;*/
 }
 
 h2 {
   font-size: 250%;
-/* text-align: center; */
-  font-family: Garamond, Times, serif;
+  font-family: 'Open Sans', 'Helvetica', sans-serif;
 
+/* text-align: center;
+  font-family: Garamond, Times, serif;*/
+
+}
+
+h3 {
+font-family: 'Open Sans', 'Helvetica', sans-serif;
 }
 
 
 
 .top > h1 {
-  font-family: 'Helvetica bold',Arial,sans-serif;
+  font-family: Helvetica, 'Open Sans',sans-serif;
+  font-weight: 800;
+}
 
-
+.top > h2 {
+  font-size: 200%;
 }
 
 .top {
@@ -264,6 +278,9 @@ list-style-type: none;
   margin: auto;
 }
 
+#mcgurnframe {
+  padding-top: 70px;
+}
 .maudesTop{
       height: 100vh;
       width: 100%;
@@ -275,6 +292,7 @@ list-style-type: none;
        color: #fff;
 }
 
+
 .maudesTop h1 {
 text-shadow: 2px 2px #000;
 }
@@ -282,7 +300,6 @@ text-shadow: 2px 2px #000;
 .maudesBody{
   padding: 30px;
 }
-
 
 .doughTop {
   height: 100vh;
@@ -369,6 +386,8 @@ background-repeat: no-repeat;
   margin: auto;
 }
 
+#aboutus {
+  text-decoration: underline;}
 
 .businesses {
   padding:20px;
@@ -712,4 +731,13 @@ iframe {
     margin: 0 18px 0 0;
     font-size: 30px;
   }
+}
+
+/*tablet/ipad media query */
+@media (max-width: 960px) {
+  #mapid  {
+      max-width: 100%;
+      margin: 0;
+      height: 450px;
+      }
 }
