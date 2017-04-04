@@ -2,16 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--  <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	  <title> Culture in Crisis </title>
 	  <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/hearst.css">
     <!--<link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/screen.css"> -->
 
+<!-- leaflet stylesheet -->
+  <link rel="stylesheet"  href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css">
 
     <!-- Check Mindy's comments on the stylesheet order -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css">
 
 
@@ -19,7 +24,6 @@
 </head>
 
 <body>
-  <div id="mapid" > </div>
 
 
 
@@ -123,17 +127,20 @@ Video Section Ends Here-->
 -->
 
 
+
+
+<div class="businesses">
+
   <div class= "textpanel container-fluid">
 
     <h2 class="section-subheading wow fadeInDown text-center">The following local Gainesville businesses have been impacted by development. </h2>
   </div>
 
-<div class="businesses">
 <!-- modals from https://miketricking.github.io/bootstrap-image-hover/ -->
 
 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
     <div class="hovereffect">
-        <img class="img-responsive" src="images/jam.jpg" alt="the_jam">
+        <img class="img-responsive center-block" src="images/jam.jpg" alt="the_jam">
             <div class="overlay">
                 <h2>The Jam</h2>
 				<p>
@@ -185,7 +192,7 @@ Video Section Ends Here-->
 
 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
     <div class="hovereffect">
-        <img class="img-responsive text-center" src="images/burrito2.jpg" alt="">
+        <img class="img-responsive center-block" src="images/burrito2.jpg" alt="">
             <div class="overlay">
                 <h2>Burrito Brothers</h2>
 				<p>
@@ -311,13 +318,12 @@ Video Section Ends Here-->
         <img class="img-responsive center-block" src="images/addiction.jpg" alt="">
             <div class="overlay">
                 <h2>Addiction Tattoo</h2>
-				<p>
-          <button class="btn btn-primary" id="clickaddiction">
-            Read more
-          </button>
-				</p>
-
-      </div>
+      				<p>
+                <button class="btn btn-primary" id="clickaddiction">
+                  Read more
+                </button>
+      				</p>
+            </div>
     </div>
 </div>
 
@@ -405,10 +411,11 @@ Video Section Ends Here-->
           </button>
 				</p>
 
-
         </div>
     </div>
 </div>
+
+
 
 <div id="doughModal" class="modalContainer" style="display:none">
   <div class="modalContent">
@@ -631,6 +638,12 @@ Video Section Ends Here-->
 
 -->
 
+<div id="mapwrap">
+<!-- This is a wrapper for your Leaflet.js map -->
+  <div id="mapid" > </div>
+</div>
+
+
 <div id="mcgurn">
 
     <div class="col-sm-6">
@@ -661,13 +674,13 @@ Video Section Ends Here-->
 <!--scripts-->
   <script src="js/jquery.min.js"></script>
   <script src="js/hearst.js"></script>
-  <script src="js/map.js"></script>
 
- <script src="http://pupunzi.com/mb.components/mb.YTPlayer/demo/inc/jquery.mb.YTPlayer.js"></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"> </script>
 
+<!-- THE LEAFLET SCRIPTS MUST COME LAST!!!!! If they don't, you will get some wonky stuff. I don't make the rules ok. Also don't forget the Leaflet stylesheet in the head -->
   <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"> </script>
+  <script src="js/map.js"></script>
 
 
 
