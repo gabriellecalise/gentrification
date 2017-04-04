@@ -261,6 +261,7 @@ list-style-type: none;
 
 #mcgurn {
   padding: 20px;
+  margin: auto;
 }
 
 .maudesTop{
@@ -394,7 +395,7 @@ bottom: 15px;
   padding: 0;
   width: 100%;
   color: #000;
-  background: #fff;
+  background-color: #fff;
   height:50px;
   margin: 0;
 
@@ -408,7 +409,7 @@ bottom: 15px;
  }
 
 .firstcharacter {
-  color: #48c;
+  color: #611;
   float: left;
   font-family: Georgia;
   font-size: 75px;
