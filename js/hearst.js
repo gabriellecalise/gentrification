@@ -5,6 +5,11 @@ $(document).ready(function () {
 });
 
 
+$().ready(function() {
+  $('#wrapper').tubular({videoId: '0Bmhjf0rKe8'}); // where idOfYourVideo is the YouTube ID.
+});
+
+
 
 var jamModal;
 jamModal = document.getElementById('jamModal');
@@ -47,4 +52,27 @@ flashModal.querySelector('.modal-close').addEventListener('click', function() {
 
 document.getElementById('clickFlash').addEventListener('click', function() {
   flashModal.style.display = 'block';
+})
+
+
+
+var burrModal;
+burrModal = document.getElementById('burrModal');
+burrModal.querySelector('.modal-close').addEventListener('click', function() {
+  burrModal.style.display = 'none';
+});
+
+document.getElementById('clickburr').addEventListener('click', function() {
+  burrModal.style.display = 'block';
+})
+
+
+var addictionModal;
+addictionModal = document.getElementById('addictionModal');
+addictionModal.querySelector('.modal-close').addEventListener('click', function() {
+  addictionModal.style.display = 'none';
+});
+
+document.getElementById('clickaddiction').addEventListener('click', function() {
+  addictionModal.style.display = 'block';
 })

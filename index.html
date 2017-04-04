@@ -7,21 +7,16 @@
 	  <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/hearst.css">
 
-    <script src="http://pupunzi.com/mb.components/mb.YTPlayer/demo/inc/jquery.mb.YTPlayer.js"></script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"> </script>
-    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"> </script>
-
 
     <!-- Check Mindy's comments on the stylesheet order -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css">
 
 </head>
 
 <body>
 
-
+  <div id="wrapper"></div>
 
 
   <!--Video Section
@@ -41,8 +36,9 @@
 Video Section Ends Here-->
 
 
+ <!-- <div id="mapid" > </div> -->
 
-<div id="mapid"></div>
+
 <script>
 
 var mymap = L.map('mapid').setView([29.653, -82.334], 15
@@ -146,7 +142,7 @@ var marker7=L.marker([29.649150, -82.323666]).addTo(mymap)
 
   <iframe src="https://player.vimeo.com/video/206085330" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-  <p><a href="https://vimeo.com/206085330">13th to 3rd</a> from <a href="https://vimeo.com/dreacc">Drea Cornejo</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+  <p class="text-center"><a href="https://vimeo.com/206085330">13th to 3rd</a> from <a href="https://vimeo.com/dreacc">Drea Cornejo</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 
 
@@ -242,13 +238,120 @@ var marker7=L.marker([29.649150, -82.323666]).addTo(mymap)
             <div class="overlay">
                 <h2>Burrito Brothers</h2>
 				<p>
-          <button id="clickBurrito" class="btn btn-primary">
-     Read more </button>
+          <button class="btn btn-primary" id="clickburr">
+              Read more
+          </button>
 				</p>
 
       </div>
   </div>
 </div>
+
+
+<div id="burrModal" class="modalContainer" style="display:none">
+  <div class="modalContent">
+    <div class="burrModal-imgContainer">
+
+    </div>
+
+    <div class="modal-close">X</div>
+    <!--<h3 id="burrModal-name">Burrito Brothers</h3>
+    <h4 id="burrModal-partyContainer">
+					A downtown coffee shop thrives despite the Starbucks that moved in across the street
+					<span class="burrModal-value" id="burrModal-party"></span>
+				</h4>-->
+
+
+        <div class="burrTop">
+            <h1 class="text-right"> Burrito Brothers</h1>
+        </div>
+
+  <div class="col-xs-10 col-sm-8 col-md-8 col-md-offset-2">
+
+    <div class="burrBody">
+
+      <p> After two moves and 40 years of burritos and special red sauce, Burrito Brothers in Gainesville is shutting its doors.</p>
+
+      <p> Randy Akerson, the owner, posted a Facebook message Monday morning announcing that the Gainesville staple will be closing this Saturday, Feb. 4 due  in part to nearby construction of The Standard, a Landmark Properties apartment complex, as well as decreasing revenue.</p>
+
+<p> Akerson wrote: </p>
+
+    <blockquote> “As we are taught by the Buddha (and also George Harrison), all things must pass. Everything that has a first day, must also inevitably have a last day as well. Next Saturday, February 4, will be the last day for Burrito Brothers. Some of you may have already heard this, as we gave our employees an early notice so that they could find other jobs, and the news inevitably leaked, but the rumors are true, and we are closing.” </blockquote>
+
+    <p> Hundreds of loyal customers expressed their sympathy and anger online, but the line out of the door of Burrito Brothers on Monday just hours after Akerson’s post showed the true dedication of its customers.</p>
+
+      <p> Heather Steingraber, a UF College of Pharmacy staff member, munched on chips and reminisced with her friend about the good times she’d had at the restaurant. She used to go to the “hole-in-the-wall” location on 13th Street where customers were packed in like sardines.</p>
+
+  <p> While the burrito aficionado said she is happy with Burrito Brothers any way she can get it, she does believe that the push for development of University Avenue is to blame for pushing the restaurant out of business. She also said she thinks the lack of parking hindered the restaurant’s business.</p>
+
+  <p> “(Gainesville) doesn’t have the same feel,” Steingraber said. “It had more character before. It’s all big businesses [now].”</p>
+
+  <p> Wade FitzGerald was one of the hundreds of customers who stood in line Monday for the chorizo and chicken burrito and made a pact to visit the institution every day this week.</p>
+
+      <p> “It’s what I always get,” said the 19-year-old UF sophomore, who said he has been eating at the restaurant for as long as he can remember.</p>
+
+          <p> Employees at the restaurant helped the steady stream of customers to their favorite burritos and dozens of commemorative T-shirts.</p>
+
+  <p> Adam Mickler, a 23-year-old Santa Fe sophomore, sweated away at the stove for the hungry patrons. The mood in the back was comedic, he said, as cooks wondered where these customers were when their business was needed.</p>
+
+  <p> The four-year employee, who is now a manager at the restaurant, began as an inexperienced 18-year-old dishwasher making minimum wage.</p>
+
+  <p> “(The owners) kind of just took me under their wing,” Mickler said. “They literally gave me everything.”</p>
+
+  <p> Rising from a regular customer who would come to Burrito Brothers to cure his hangovers, Mickler worked his way up and into the hearts of owners Janet and Randy Akerson.</p>
+
+  <p> When he came into work on the day that Randy was sharing the somber news of Burrito Brothers closing, Mickler thought that somebody had died. Everyone was tearing up, and when he was told, he did too.</p>
+
+  <p> “It’s surreal. It’s not going to feel real until the doors are closed,” he said. “I just assumed that I’d always be working here as long as I was in Gainesville.”</p>
+
+  <p> Co-owner Janet Akerson said she is most upset about her 25 employees losing their jobs.</p>
+
+  <p> “It makes us terribly sad, but we tried really hard,” she said, citing two GoFundMe pages and a 40th birthday fundraiser for the restaurant in December. “We’re at peace with it because there’s nothing we can do.”</p>
+
+  <p> Janet says she has been reading what people are writing on her husband’s Facebook post and cries at the outpouring of love.</p>
+
+  <p> “We’ve had people coming in here for forty years,” she said, tears welling up in her eyes. </p>
+
+  <p> Burrito Brothers fans have already put in more than a 100 orders for frozen burritos to remember the taste of a Gainesville gone by, she said.</p>
+
+  <p> Staring out the window of her restaurant, Janet sees The Standard next door, a 10-story-tall construction site blowing dust in the direction of Burrito Brothers’ outdoor patio.</p>
+
+  <p> “I’m not happy with the direction my city is going,” she said, referring to the development of big chains and comparing the city to a younger Miami.</p>
+
+  <p> After emailing with developers of The Standard who said it wasn’t their fault for the small business’s dropping revenues, the Akersons decided not to pursue a lawsuit, estimated to cost them a minimum of $100,000. It was time to close, Randy concluded.</p>
+
+  <p> A 20 percent to 25 percent drop in revenues over six months was catastrophic for a small business like theirs, he said.</p>
+
+  <p> Randy said he mainly blames the construction of The Standard for his business failing. The impact of decreased parking and blocked roads was “instantaneous and obvious,” he said.</p>
+
+  <p> After repeated attempts at reaching out, WUFT News was unable to reach The Standard for comment.</p>
+
+  <p> “The dirt and dust created by a construction site is unbelievable. The noise is deafening. The smell of open sewers was appalling,” Randy said. “We tried to stick it out,” but the timing of Burrito Brothers’ second expansion in Midtown coinciding with the massive construction project next door was “absolutely as horrendous as it could possibly be.”</p>
+
+  <p> Randy echoed the sentiment expressed by his wife and many long-time customers: “Gainesville in general has lost its character.”</p>
+
+  <p> About two weeks ago, Randy said he weighed his options and decided to tell his employees that they should start looking for new jobs. They were grateful to have the heads-up.</p>
+
+  <p> “It was the last kindness I could do for them,” he said. “Neither they nor I thought a day would come that I wouldn’t have a job to give them.”</p>
+
+  <p> Danielle Vickery-Keating, a 38-year-old home health worker, could not have imagined a day when she wouldn’t be a customer at the restaurant either. </p>
+
+  <p> Vickery-Keating said she makes a stop in Gainesville on her way to Tampa every year specifically for the burritos and used to have frozen burritos and a half gallon of red sauce shipped to her in South Carolina.</p>
+
+  <p> “It was a little piece of Gainesville in your freezer,” she said.</p>
+
+  <p> She remembers going to the original location on 13th Street, where only four people could sit inside and the line always made its way out the door. The customers were consistent and frequent.</p>
+
+  <p> “It didn’t matter if it was cold or raining. You just went and got what you wanted,” Vickery-Keating said. “It’s just a little bit of heaven in your day.” </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
 
 
 
@@ -258,7 +361,7 @@ var marker7=L.marker([29.649150, -82.323666]).addTo(mymap)
             <div class="overlay">
                 <h2>Addiction Tattoo</h2>
 				<p>
-          <button class="btn btn-primary" id="clickAddiction">
+          <button class="btn btn-primary" id="clickaddiction">
             Read more
           </button>
 				</p>
@@ -266,6 +369,11 @@ var marker7=L.marker([29.649150, -82.323666]).addTo(mymap)
       </div>
     </div>
 </div>
+
+
+
+
+
 
 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
     <div class="hovereffect">
@@ -280,7 +388,13 @@ var marker7=L.marker([29.649150, -82.323666]).addTo(mymap)
 
         </div>
     </div>
-</div>
+  </div>
+
+
+
+
+
+
 
 
 
@@ -291,6 +405,7 @@ var marker7=L.marker([29.649150, -82.323666]).addTo(mymap)
     </div>
 
     <div class="modal-close">X</div>
+
 
     <div class="col-xs-10 col-sm-8 col-md-8 col-md-offset-2">
 
@@ -307,6 +422,9 @@ var marker7=L.marker([29.649150, -82.323666]).addTo(mymap)
       <p>Maude’s is also a popular studying spot. Week days and weekends alike, the business fills up with students in need of good coffee. For those in need of a break from staring at a laptop screen or just needing to unwind, Maude’s also has a wide collection
         of board games to play.</p>
 
+        <img src="images/MaudesWindow.jpg" alt="patrons at maudes" class="img-responsive">
+
+
       <p>After visiting a few times, you start to notice the same faces. Maude’s employees are social and have regulars whom they interact with and even spend their breaks chatting with. The employees dress how they want to and aren’t afraid to speak what’s
         on their mind, which adds to the feel of the restaurant.</p>
 
@@ -314,6 +432,10 @@ var marker7=L.marker([29.649150, -82.323666]).addTo(mymap)
 
       <p>“I got hired during a struggle at the company that had to do with old ownership,” Eisenberg says, “and all of the other coffee shops that have opened up in the past couple of years. I think the people who got hired really turned it around again.”
       </p>
+
+      <img src="images/MaudesSmoking.jpg" alt="patrons at maudes" class="img-responsive">
+
+
 
       </div>
     </div>
@@ -344,8 +466,11 @@ var marker7=L.marker([29.649150, -82.323666]).addTo(mymap)
 
 
     <div class="doughTop">
-      <h1 class="text-right"> Dough Religion and ooZoo Bar</h1>
+      <h1 class="text-right"> Dough Religion + ooZoo Bar</h1>
     </div>
+
+
+
 
 
     <div class="col-xs-10 col-sm-8 col-md-8 col-md-offset-2">
@@ -381,6 +506,7 @@ var marker7=L.marker([29.649150, -82.323666]).addTo(mymap)
 
         <p>It was no secret that it was an up-and-coming venue with increasing sales, but it was not enough to keep the owners from selling it, he said. </p>
 
+
         <p>While ooZoo Bar and Dough Religion Pizza are down the street and tucked away from the Midtown scene, the location and older crowd was a selling point for some regulars. </p>
 
 
@@ -397,6 +523,10 @@ var marker7=L.marker([29.649150, -82.323666]).addTo(mymap)
         <p>Going to the bar two to three times a week was a tradition for Tomtine, the couple nickname the bartenders bestowed upon the regulars. </p>
 
         <p>“There’s a serious void that we can’t fill,” Hamm said. “This was the first place we’ve felt like we’ve belonged in five and a half years.” </p>
+
+
+        <img src="images/doughBoard.jpg" alt="The board on the last day of operations" class="img-responsive">
+
 
         <p>For Sean McCarty, a 30-year-old kitchen manager and assistant manager of the restaurants, his home was taken from him without a second thought. If put in the owner’s position, McCarty said he believes it would have been a lot harder for him to
           sell the place that gave him a second family. </p>
@@ -451,34 +581,65 @@ var marker7=L.marker([29.649150, -82.323666]).addTo(mymap)
     </div>
 
     <div class="modal-close">X</div>
-    <h3 id="flashModal-name">Flashbacks</h3>
+    <!--<h3 id="flashModal-name">BurgerQue</h3>-->
   <!--  <h4 id="flashModal-partyContainer">
 					A downtown coffee shop thrives despite the Starbucks that moved in across the street
 					<span class="flashModal-value" id="flashModal-party"></span>
 				</h4>-->
 
+        <div class="burgerTop">
+          <h1 class="text-right"> BurgerQue</h1>
+        </div>
 
     <div class="flashBody">
 
-      <p>In the midst of a community that is rapidly commercializing, Flashbacks Recycled Fashions has managed to not only survive on the streets of Gainesville, but thrive, as a prosperous and well-known business.</p>
 
-      <p>Steve Nichtberger, owner and founder of the store, said the quirky and unconventional shop has called West University Avenue its home since 1986. His store offers a wide array of consignment clothing, retro and vintage decor, housewares, furniture,
-        art, knickknacks and other “cool junk.” </p>
+      <div class="col-xs-10 col-sm-8 col-md-8 col-md-offset-2">
 
-      <p>In his 31 years on University, he said he has seen a great deal of local business come and go. What has made Flashbacks prevail against the destructive effects of gentrification and development is the uniqueness of his business and the personal
-        touch that he and his employees offer.</p>
+      <p>BurgerQuE, known for its barbeque and burger fusion at 1220 W. University Ave., closed its doors in late October due to management concerns, says Tim Mankin, the owner of the restaurant.</p>
 
-      <p>“I could tell you all sorts of economic theories,” Nichtberger said. “But I have always felt that putting myself in the position of caring for my customers has really made a difference.” </p>
+      <p>Mankin, 46, says the staff was not as efficient as his fast-paced employees at the two locations in Fort Myers because of a rushed opening in Gainesville. The restaurant will open again in January 2017 when employees are finished training at the Fort Myers location and can move to Gainesville.</p>
 
-      <p>Flashbacks provides a business that corporations like Walmart and Target can’t really compete with. Often times, local residents come in just for the interaction. He said he has had people come in throughout the years saying, “I’m just here to talk.”
-        </p>
+      <p>“This location’s going to be kind of like bringing my first (restaurant) out,” he says. “It takes time for things to develop.”</p>
 
-      <p>“As soon as someone comes in and says ‘This is my favorite store,’ you have won their loyalty,” he said.</p>
+      <p>Mankin says there was a disconnect between training his employees, which could take up to 90 days, and the quick turnaround to get the store opened in two months, which happened in November 2015.</p>
 
-      <p>Nichtberger said he recognizes that businesses closing and being replaced is just a part of life and a sign of a progressing economy. But this doesn’t mean it isn’t disappointing to watch happen.</p>
+      <p>His decision to close temporarily and reopen in January 2017 also coincides with the construction of a McDonald’s next door and the opening of Felipe’s Taqueria across the street. Some customers and employees seem to agree that BurgerQuE will do better with the added competition come January.</p>
 
-      <p>Flashbacks is one of the lucky few in the heap of businesses residing on University that are still flourishing. Last year was the store’s busiest year in 31 years, and Nichtberger said he is training his daughter to soon take the reins to the store.</p>
 
+      <img src="images/closed.jpg" alt="closed" class="img-responsive">
+
+      <p>“Not everybody wants to eat the same thing all the time,” Mankin says.</p>
+
+      <p>Mankin hopes his business will stay afloat due to increased foot traffic from The Standard, an apartment complex slated to open in 2017. Even if the students’ destination is McDonald’s, he said they would inevitably pass by BurgerQuE on their way, a boost for his brand.</p>
+
+    <p>  For Martha Wilson, 19, a loyal BurgerQuE customer-turned-employee, eating at the restaurant is an easy choice.</p>
+
+      <p>When Wilson first walked into BurgerQuE, she said the experience was heavenly. The smell of “really good, pure angus beef” and the sight of posters of “nostalgic music” drew her in.</p>
+
+      <p>“I’ve never actually seen anything like it,” she says. “Regardless of ever working there… I would be this excited about it.”</p>
+
+      <p>Wilson says she has faith that Mankin will make the restaurant successful, despite increased competition along University Avenue.</p>
+
+      <p>“He’s going to make it work,” Wilson says. “Something about him makes you know he’s going to figure it out. It’ll be nothing but up from here.”</p>
+
+      <p>Like many loyal BurgerQuE customers, Wilson says she is willing to wait for BurgerQuE to reopen. After all, she gave up three jobs to work at one of her favorite restaurants.</p>
+
+      <p>“I’m as eager for it to reopen as I’m sure anyone is,” she says. “I miss the food.”</p>
+
+      <p>Daniel Leal, a 22-year-old UF sustainability studies senior and a BurgerQuE regular, says he was shocked when he realized one of his favorite Gainesville restaurants was closed.</p>
+
+      <p>“When I discovered that they weren’t opening until January, I was so mad,” Leal says. He understands the decision to close. He had heard how the two restaurants in Fort Myers were comparable to rock concerts. As a fan of the rock-and-roll theme, beef brisket and kegs used as decorations, Leal says customers go to a McDonald’s for the food, whereas for BurgerQuE diners, it’s more about the experience.</p>
+
+      <p>“I’m a firm believer that when you go out to eat… it might as well be a full experience,” Leal says. “(At BurgerQuE), you feel like you’re backstage at a Led Zeppelin concert.”</p>
+
+
+      <img src="images/mcdonalds.jpg" alt="closed" class="img-responsive">
+
+
+
+
+      </div>
     </div>
   </div>
 </div>
@@ -549,6 +710,14 @@ var marker7=L.marker([29.649150, -82.323666]).addTo(mymap)
 <!--scripts-->
   <script src="js/jquery.min.js"></script>
   <script src="js/hearst.js"></script>
+
+<!--  <script src="http://pupunzi.com/mb.components/mb.YTPlayer/demo/inc/jquery.mb.YTPlayer.js"></script>-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"> </script>
+
+  <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"> </script>
+
+
 
 </body>
 </html>
