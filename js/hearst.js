@@ -80,7 +80,7 @@ document.getElementById('clickaddiction').addEventListener('click', function() {
 
 
 
-$('#teambio').hide();
-   $('#aboutus').click(function() {
-   $('#teambio').slideToggle();
-   });
+//$('#teambio').hide();
+  // $('#aboutus').click(function() {
+   //$('#teambio').slideToggle();
+  // });
