@@ -85,6 +85,12 @@ font-family: Helvetica,Arial,sans-serif;
     background-size: 100%; */
 }
 
+
+.intrograf {
+  height: 100vh;
+
+}
+
 .gentpic {
   width: 80%;
   margin: auto;
