@@ -773,7 +773,9 @@ iframe {
 
 @media (max-width: 600px) {
 
-.top { background-image: none;}
+.top { background-image: none;
+padding: 15px;
+padding-top: 50%;}
 
 .top> h1 {
     font-size: 450%;}
