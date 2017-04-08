@@ -315,10 +315,12 @@ font-family: 'Open Sans', 'Helvetica', sans-serif;
   background: #cde;
 }
 .maudesTop{
+      background-image: url("../images/plants.jpg");
       height: 100vh;
-      width: 100%;
-      background-image: url("../images/MaudesPlants.jpg");
-      background-repeat: no-repeat;
+      max-width: 100%;
+      background-size: cover; /*this fits the background image to the div*/
+
+    /*  background-repeat: no-repeat;*/
       padding-top: 40%;
       padding-left: 40px;
       padding-right: 40px;
